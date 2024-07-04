@@ -441,6 +441,49 @@ section .title::after{
     background: crimson!important;
 }
 
+/* hobbies section styling */
+.hobbies .title::after{
+    content: "I Enjoy";
+}
+.hobbies .carousel .card{
+    background: #797979;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.hobbies .carousel .card:hover{
+    background: crimson;
+}
+.hobbies .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.hobbies .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.hobbies .carousel .card .text{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.hobbies .carousel .card img{
+    height: 340px;
+    width: 340px;
+    object-fit: cover;
+    border-radius: 1;
+    border: 3px solid rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+.hobbies .carousel .card:hover img{
+    border-color: #fff;
+}
+
+
 /* contact section styling */
 contact {
     padding: 50px 0;
