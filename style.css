@@ -446,7 +446,7 @@ section .title::after{
     content: "I Enjoy";
 }
 .hobbies .carousel .card{
-    background: #797979;
+    background: #222;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -467,20 +467,43 @@ section .title::after{
     transform: scale(1.05);
 }
 .hobbies .carousel .card .text{
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: bold;
     margin: 10px 0 7px 0;
+    color: #f1f1f1;
+    
 }
 .hobbies .carousel .card img{
-    height: 340px;
-    width: 340px;
+    height: 330px;
+    width: 330px;
     object-fit: cover;
     border-radius: 1;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid crimson;
     transition: all 0.3s ease;
 }
 .hobbies .carousel .card:hover img{
     border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
 }
 
 
